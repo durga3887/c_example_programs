@@ -9,7 +9,7 @@ void swap(int *a, int *b)
         {
             if(*(b+count) != '\0' )
             {
-                *(a\+count) = *(a+count) + *(b+count);
+                *(a +count) = *(a+count) + *(b+count);
                 *(b+count) = *(a+count) - *(b+count);
                 *(a+count) = *(a+count) - *(b+count);
                 
@@ -21,7 +21,17 @@ void swap(int *a, int *b)
         }
         if(*(b+count) != '\0' )
         {
-            
+            if(*(a+count) != '\0' )
+            {
+                *(a +count) = *(a+count) + *(b+count);
+                *(b+count) = *(a+count) - *(b+count);
+                *(a+count) = *(a+count) - *(b+count);
+                
+            }
+            else
+            {
+                
+            }
         }
     }
 }
